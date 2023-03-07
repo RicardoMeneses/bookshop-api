@@ -37,5 +37,5 @@ export class UpdateBookDto {
   @IsBoolean()
   @IsOptional()
   @Transform(({ value }) => value === 'true')
-  isFavourite: boolean;
+  isFavorite: boolean;
 }

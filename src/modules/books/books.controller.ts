@@ -6,19 +6,21 @@ import {
   Param,
   Post,
   Put,
+  Query,
 } from '@nestjs/common';
 import { BooksService } from './books.service';
 import { CreateBookDto } from './dto/create-book.dto';
+import { FavoritesBooksDto } from './dto/get-favourites.dto';
 import { UpdateBookDto } from './dto/update-book.dto';
 
 @Controller('books')
 export class BooksController {
   constructor(private bookingService: BooksService) {}
 
-  // Find All book with pagination
+  // Find All books or only favorites
   @Get()
-  findAll() {
-    return this.bookingService.findAllBooks();
+  findAll(@Query('favorites') favoritesdto: FavoritesBooksDto) {
+    return this.bookingService.findAllBooks(favoritesdto);
   }
 
   // Get one book by slug

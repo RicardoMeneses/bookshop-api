@@ -35,7 +35,7 @@ export class Book {
   publicationDate: string;
 
   @Prop({ required: true })
-  isFavourite: boolean;
+  isFavorite: boolean;
 }
 
 const schema = SchemaFactory.createForClass(Book);

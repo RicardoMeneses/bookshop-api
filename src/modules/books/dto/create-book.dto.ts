@@ -37,5 +37,5 @@ export class CreateBookDto {
   @IsBoolean()
   @IsNotEmpty()
   @Transform(({ value }) => value === 'true')
-  isFavourite: boolean;
+  isFavorite: boolean;
 }
