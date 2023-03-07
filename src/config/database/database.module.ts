@@ -2,7 +2,7 @@ import { DynamicModule, Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule, MongooseModuleFactoryOptions } from '@nestjs/mongoose';
 
-import { BookShopConfig } from '../configuration';
+import { BookShopConfig } from '../app/configuration';
 
 @Module({})
 export class BookShopDatabaseModule {
