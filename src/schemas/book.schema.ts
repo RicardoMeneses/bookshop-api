@@ -7,7 +7,7 @@ export type BookDocument = Book & Document;
 export class Book {
   _id: Types.ObjectId | string;
 
-  @Prop({ required: true, unique: true })
+  @Prop({ unique: true })
   slug: string;
 
   @Prop({ required: true })
