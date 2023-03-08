@@ -6,7 +6,7 @@ import { CreateBookDto } from './dto/create-book.dto';
 import { FavoritesBooksDto } from './dto/get-favourites.dto';
 import { UpdateBookDto } from './dto/update-book.dto';
 import slugify from 'slugify';
-import { ErrorCodes } from 'src/common/errors';
+import { ErrorCodes } from '../../common/errors';
 
 @Injectable()
 export class BooksService {
