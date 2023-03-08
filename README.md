@@ -24,25 +24,19 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+API para el dashboard de libros
 
-## Installation
-
-```bash
-$ yarn install
-```
-
-## Running the app
+## Configuración
 
 ```bash
-# development
-$ yarn run start
-
-# watch mode
+# Clona el repositorio
+$ git clone urlRepositorio
+# Instala dependecias
+$ yarn
+# Crear un archivo .env y agregar DB_URI y PORT
+$ touch .env && sudo vi .env
+# Ejecución
 $ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
 ```
 
 ## Test
